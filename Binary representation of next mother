@@ -1,0 +1,8 @@
+#User function Template for python3
+class Solution:
+	def binaryNextNumber(self, s):
+		# code here
+		n=int(s,2)
+		n+=1
+		new=bin(n)[2:]
+		return new
