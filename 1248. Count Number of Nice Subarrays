@@ -1,4 +1,4 @@
-class Solution:
+class Solution:  
   def numberOfSubarrays(self, nums: List[int], k: int) -> int:
     def numberOfSubarraysAtMost(k: int) -> int:
       ans = 0
