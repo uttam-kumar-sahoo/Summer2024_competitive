@@ -1,4 +1,4 @@
-class Solution:
+class Solution: 
   def commonChars(self, A: List[str]) -> List[str]:
     ans = []
     commonCount = [math.inf] * 26
