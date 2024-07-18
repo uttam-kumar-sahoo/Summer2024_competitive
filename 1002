@@ -5,7 +5,7 @@ class Solution:
 
     for a in A:
       count = [0] * 26
-      for c in a:
+      for c in a: 
         count[ord(c) - ord('a')] += 1
       for i in range(26):
         commonCount[i] = min(commonCount[i], count[i])
