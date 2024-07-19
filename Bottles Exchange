@@ -1,0 +1,5 @@
+while numBottles >= numExchange:
+            totalBottles += numBottles // numExchange
+            numBottles = numBottles // numExchange + numBottles % numExchange
+
+        return totalBottles
