@@ -1,0 +1,12 @@
+class Solution:
+    def isBST(self, node):
+        return self.isBSTUtil(node, None, None)
+
+    def isBSTUtil(self, node, minNode, maxNode):
+        if not node:
+            return True
+
+        if (minNode and node.data <= minNode.data) or (maxNode and node.data >= maxNode.data):
+            return False
+
+        return self.isBSTUtil(node.left, minNode, node) and self.isBSTUtil(node.right, node, maxNode)
