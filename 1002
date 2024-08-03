@@ -1,6 +1,6 @@
 class Solution: 
   def commonChars(self, A: List[str]) -> List[str]:
-    ans = []
+    ans = [] 
     commonCount = [math.inf] * 26
  
     for a in A:
