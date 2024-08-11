@@ -3,7 +3,7 @@ class Solution:
     def numberOfSubarraysAtMost(k: int) -> int:
       ans = 0
       l = 0
-      r = 0
+      r = 0 
  
       while r <= len(nums):
         if k >= 0:
