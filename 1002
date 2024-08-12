@@ -1,10 +1,10 @@
 class Solution: 
   def commonChars(self, A: List[str]) -> List[str]:
-    ans = []
+    ans = [] 
     commonCount = [math.inf] * 26
-
+ 
     for a in A:
-      count = [0] * 26
+      count = [0] * 26 
       for c in a: 
         count[ord(c) - ord('a')] += 1
       for i in range(26):

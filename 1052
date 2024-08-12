@@ -6,7 +6,7 @@ class Solution:
 
     for i, customer in enumerate(customers):
       if grumpy[i] == 1:
-        windowSatisfied += customer
+        windowSatisfied += customer 
       if i >= X and grumpy[i - X] == 1:
         windowSatisfied -= customers[i - X]
       madeSatisfied = max(madeSatisfied, windowSatisfied)
