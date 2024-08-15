@@ -6,7 +6,7 @@ class Solution:
       r = 0 
  
       while r <= len(nums):
-        if k >= 0:
+        if k >= 0: 
           ans += r - l
           if r == len(nums):
             break
