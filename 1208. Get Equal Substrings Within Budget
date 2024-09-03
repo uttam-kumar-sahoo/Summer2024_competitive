@@ -6,5 +6,5 @@ class Solution:
       if maxCost < 0:
         maxCost += abs(ord(s[j]) - ord(t[j]))
         j += 1
-  
+   
     return len(s) - j
