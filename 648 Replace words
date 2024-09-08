@@ -6,7 +6,7 @@ class Solution:
     node = self.root
     for c in word:
       if c not in node:
-        node[c] = {}
+        node[c] = {} 
       node = node[c]
     node['word'] = word
 
