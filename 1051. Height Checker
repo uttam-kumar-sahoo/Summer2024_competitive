@@ -2,7 +2,7 @@ class Solution:
     def heightChecker(self, heights: List[int]) -> int:
         # Create a sorted version of heights to compare against
         expected = sorted(heights)  
-         
+          
           # Count the number of differences between the original and sorted heights  
         return sum(1 for h, e in zip(heights, expected) if h != e) 
  
